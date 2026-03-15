@@ -16,8 +16,8 @@
     </button>
     
     <div v-if="result" class="result">
-      <h2>{{ result.summary?.title || '处理完成' }}</h2>
-      <p>{{ result.summary?.one_sentence }}</p>
+     <h2>{{ result.summary?.title || '处理完成' }}</h2>
+     <p>{{ result.summary?.text || result.summary?.one_sentence }}</p>
     </div>
   </div>
 </template>
